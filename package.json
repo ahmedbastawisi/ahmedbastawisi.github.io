@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@microsoft/atlas-css": "^3.31.0",
+    "@microsoft/atlas-js": "^1.5.5"
+  }
+}

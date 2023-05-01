@@ -1,40 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" class="default-focus theme-light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed El-bastawisi Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="css/atlas.css">
     <link rel="stylesheet" href="css/site.css">
     <script src="js/atlas.js"></script>
     <script src="js/site.js"></script>
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
 </head>
 
-<body class="background-color-body-medium">
-    <article class="card margin-xl">
-        <div class="card-content font-size-lg display-flex flex-direction-column">
-            <div class="media">
-                <div class="media-left">
-                    <div class="image image-64x64">
-                        <img class="border-radius-rounded"
-                            alt="Write alt text here or if image is presentational only add aria-hidden attribute"
-                            src="images/ahmedbastawisi.lite.jpg" />
+<body id="body">
+    <header id="header" class="border-bottom padding-xs">
+        <div id="header-body" class="align-items-center display-flex justify-content-flex-start">
+            <a href="/index.html"
+                class="align-items-center color-text display-flex font-weight-bold text-decoration-none"> <span
+                    class="font-size-h3 icon margin-right-xxs"> <img alt="logo" src="/images/favicon.svg"> </span>
+                <span class="font-size-h6 line-clamp-1 gradient-text-purple-blue">Ahmed El-bastawisi</span> </a>
+        </div>
+    </header>
+    <nav id="nav">
+        <div class="margin-top-xs">
+            <p class="font-size-lg font-weight-bold">About</p>
+            <div class="margin-left-xs"> <a
+                    class="display-block font-weight-semibold margin-top-xxs text-decoration-none" href="">Overview</a>
+                <a class="display-block font-weight-semibold margin-top-xxs text-decoration-none" href="">Projects</a>
+                <a class="display-block font-weight-semibold margin-top-xxs text-decoration-none" href="">Resume</a>
+            </div>
+        </div>
+    </nav>
+    <main id="main">
+        <article class="card">
+            <div class="card-content font-size-lg display-flex flex-direction-column">
+                <div class="media">
+                    <div class="media-left">
+                        <div class="image image-64x64">
+                            <img class="border-radius-rounded"
+                                alt="Write alt text here or if image is presentational only add aria-hidden attribute"
+                                src="images/ahmedbastawisi.lite.jpg" />
+                        </div>
+                    </div>
+                    <div class="media-content">
+                        <p class="font-size-xl font-weight-semibold margin-bottom-xxs">Ahmed El-bastawisi</p>
+                        <p>Software Engineer</p>
                     </div>
                 </div>
-                <div class="media-content">
-                    <p class="font-size-xl font-weight-semibold margin-bottom-xxs">Ahmed El-bastawisi</p>
-                    <p>Software Engineer</p>
-                </div>
+                <p class="margin-block-xs color-text-subtle">
+                    Experienced Software Engineer with a demonstrated history of working in the information technology
+                    and services industry. Skilled in HTML, C#, Visual Studio, and Object-Oriented Programming (OOP).
+                    Strong engineering professional with a Bachelor's degree focused in Computer Science from Computer
+                    Engineering and Control Systems, Mansoura University.
+                </p>
             </div>
-            <p class="margin-block-xs color-text-subtle">
-                Experienced Software Engineer with a demonstrated history of working in the information technology and services industry. Skilled in HTML, C#, Visual Studio, and Object-Oriented Programming (OOP). Strong engineering professional with a Bachelor's degree focused in Computer Science from Computer Engineering and Control Systems, Mansoura University. 
-            </p>
-            <a href="#" class="display-block margin-top-auto font-size-md">View details</a>
-        </div>
-    </article>
+        </article>
+    </main>
+
+    <aside id="aside">
+        <article class="padding-xxs position-relative">
+            <a href="https://www.linkedin.com/in/ahmedbastawisi" class="stretched-link">linkedin profile.</a>
+        </article> 
+    </aside>
+    <footer id="footer" class="border-top background-color-body-medium padding-xs">
+        <p>© ahmedbastawisi 2023</p>
+    </footer>
 </body>
 
 </html>

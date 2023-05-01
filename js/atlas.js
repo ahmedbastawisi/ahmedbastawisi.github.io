@@ -1,4 +1,1 @@
-export * from './behaviors/popover';
-export * from './behaviors/snap-scroll';
-export * from './elements/form-behavior';
-export * from './utilities/util';
+(()=>{function d(e=document.body){e.addEventListener("toggle",n=>{let r=n.target instanceof Element&&n.target.closest("details.popover")||n.target instanceof Element&&n.target.shadowRoot?.activeElement?.closest("details.popover");if(!r||!r.open)return;let i=o=>{o.key==="Escape"&&s()},t=o=>{o.target instanceof Element&&(r?.contains(o.target)||s(),o.type==="click"&&o.target.closest("[data-popover-close]")&&s())},a=()=>{document.activeElement?.nodeName?.toLowerCase()==="iframe"&&s()},s=()=>{e.removeEventListener("focus",t,!0),e.removeEventListener("click",t),e.removeEventListener("touchstart",t),e.removeEventListener("keydown",i),window.removeEventListener("blur",a),r?.open&&r.removeAttribute("open")};e.addEventListener("focus",t,!0),e.addEventListener("click",t),e.addEventListener("touchstart",t),e.addEventListener("keydown",i),window.addEventListener("blur",a)},!0)}d();})();

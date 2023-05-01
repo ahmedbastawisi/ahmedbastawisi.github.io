@@ -9,28 +9,34 @@ html {
     overflow-x: hidden
 }
 
-@media screen and (min-width: 768px),print {
+@media screen and (min-width: 768px),
+print {
     #body {
-        grid-template:"header header""nav main"1fr"nav aside""footer footer"/276px 1fr;
+        grid-template: "header header" "nav main" 1fr"nav aside" "footer footer" /276px 1fr;
         display: grid
     }
 }
 
 @media screen and (min-width: 1088px) {
     #body {
-        grid-template:"header header header""nav main aside"1fr"footer footer footer"/276px 1fr 276px;
+        grid-template: "header header header" "nav main aside" 1fr"footer footer footer" /276px 1fr 276px;
         display: grid
     }
 }
 
 @media screen and (min-width: 1800px) {
     #body {
-        grid-template:"header header header header header"".nav main aside."1fr"footer footer footer footer footer"/auto 276px 1248px 276px auto
+        grid-template: "header header header header header" ".nav main aside." 1fr"footer footer footer footer footer" /auto 276px 1248px 276px auto
     }
 }
 
-#header,#nav,#aside,#footer {
-    padding-block:1rem;padding-inline:1.5rem}
+#header,
+#nav,
+#aside,
+#footer {
+    padding-block: 1rem;
+    padding-inline: 1.5rem
+}
 
 #header {
     grid-area: header
@@ -38,11 +44,13 @@ html {
 
 #nav {
     grid-area: nav;
-    padding-inline-end:0}
+    padding-inline-end: 0
+}
 
 #aside {
     grid-area: aside;
-    padding-inline-start:0}
+    padding-inline: 0
+}
 
 #footer {
     grid-area: footer
@@ -51,17 +59,7 @@ html {
 #main {
     min-height: 90vh;
     background-color: var(--theme-body-background);
-    grid-template: "breadcrumbs actions""article article"1fr/9fr 1fr;
-    grid-area: main;
-    gap: 1.5rem;
     padding: 1.5rem;
-    display: grid
-}
-
-@media screen and (min-width: 1088px) {
-    #main {
-        grid-template:"breadcrumbs actions""article article"1fr/7fr 3fr
-    }
 }
 
 #breadcrumbs-holder {
@@ -86,12 +84,22 @@ html {
 }
 
 .example.full-width {
-    padding-inline:0}
+    padding-inline: 0
+}
 
 [data-is-full-screened=true] .example.full-width {
-    margin-inline:-1.5rem}
+    margin-inline: -1.5rem
+}
 
-html.debug #header,html.debug #main,html.debug #body,html.debug #nav,html.debug #aside,html.debug #footer,html.debug #breadcrumbs-holder,html.debug #actions-holder,html.debug #article {
+html.debug #header,
+html.debug #main,
+html.debug #body,
+html.debug #nav,
+html.debug #aside,
+html.debug #footer,
+html.debug #breadcrumbs-holder,
+html.debug #actions-holder,
+html.debug #article {
     outline: 1px solid var(--theme-border)
 }
 
@@ -246,7 +254,7 @@ html.debug #footer:after {
 
 @media screen and (min-width: 1800px) {
     #header {
-        grid-template-columns:auto 276px 1248px 276px auto;
+        grid-template-columns: auto 276px 1248px 276px auto;
         grid-template-areas: ".header-body header-body header-body header-body"
     }
 }
@@ -257,7 +265,7 @@ html.debug #footer:after {
 
 @media screen and (min-width: 1800px) {
     #header-body {
-        padding-inline:1.5rem
+        padding-inline: 1.5rem
     }
 }
 
@@ -272,7 +280,7 @@ html.debug #footer:after {
 }
 
 .overflow-y-scroll {
-    overflow-y: scroll!important
+    overflow-y: scroll !important
 }
 
 .code-block {
@@ -286,7 +294,9 @@ html.debug #footer:after {
     border: none;
     flex-shrink: 1;
     margin-right: .5rem;
-    padding-block:.125rem;padding-inline:.25rem;font-size: .75rem
+    padding-block: .125rem;
+    padding-inline: .25rem;
+    font-size: .75rem
 }
 
 .code-block .code-block-header-filter::placeholder {

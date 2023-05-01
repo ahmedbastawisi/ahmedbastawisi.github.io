@@ -358,3 +358,7 @@ html.debug #footer:after {
     padding: 0 1em;
     display: inline-block
 }
+
+.theme-high-contrast img.icon, .theme-dark img.icon {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(136deg) brightness(104%) contrast(102%);
+}

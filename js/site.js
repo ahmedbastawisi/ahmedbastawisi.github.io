@@ -39,20 +39,17 @@ let theme = (event) => {
 
         page.classList.remove("theme-light");
         page.classList.add("theme-dark");
-
         localStorage.setItem('nav-theme', "theme-dark");
 
     } else if (page.classList.contains("theme-dark")) {
 
         page.classList.add("theme-high-contrast");
         page.classList.remove("theme-dark");
-
         localStorage.setItem('nav-theme', "theme-high-contrast");
 
     } else {
         page.classList.add("theme-light");
         page.classList.remove("theme-high-contrast");
-
         localStorage.setItem('nav-theme', "theme-light");
     }
 }

@@ -55,3 +55,17 @@ let theme = (event) => {
 }
 
 document.querySelector('#theme').addEventListener('click', theme);
+
+const share = {
+    title: "Ahmed El-bastawisi Portfolio",
+    text: "Ahmed El-bastawisi Portfolio",
+    url: "https://ahmedbastawisi.github.io",
+};
+
+document.querySelector('#share').addEventListener("click", async () => {
+    try {
+        await navigator.share(share);
+    } catch (err) {
+        console.warn('Something went wrong.', err);
+    }
+});

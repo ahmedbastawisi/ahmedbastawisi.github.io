@@ -24,6 +24,12 @@ print {
     }
 }
 
+@media print {
+    .display-none-print {
+        display: none !important;
+    }
+}
+
 #header,
 #nav,
 #aside,
@@ -353,6 +359,7 @@ html.debug #footer:after {
     display: inline-block
 }
 
-.theme-high-contrast img.icon, .theme-dark img.icon {
+.theme-high-contrast img.icon,
+.theme-dark img.icon {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(136deg) brightness(104%) contrast(102%);
 }

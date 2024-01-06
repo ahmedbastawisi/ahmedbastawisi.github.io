@@ -1,5 +1,7 @@
 let color = localStorage.getItem('nav-theme');
 
+document.querySelector('#footer .copy-year').textContent = new Date().getFullYear();
+
 const page = document.querySelector('html').classList.add(color || "theme-light");
 
 let links = document.querySelectorAll('nav a');
